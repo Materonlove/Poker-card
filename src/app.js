@@ -16,17 +16,15 @@ window.onload = () => {
 
   let divsCorazon = document.querySelectorAll(".palos-1");
   let divsCorazon2 = document.querySelectorAll(".palos-2");
-  let palos1 = generateRandomSuit();
-  let palos2 = generateRandomSuit();
-  console.log(palos1);
-  console.log(palos2);
-  if (palos1 == "♥" || palos2 == "♥") {
+  let palo = generateRandomSuit();
+
+  if (palo == "♥") {
     divsCorazon.forEach(divCorazon => {
-      divCorazon.innerHTML = palos1;
+      divCorazon.innerHTML = palo;
       divCorazon.style.color = "red";
     });
     divsCorazon2.forEach(divCorazon => {
-      divCorazon.innerHTML = palos2;
+      divCorazon.innerHTML = palo;
       divCorazon.style.color = "red";
     });
   }
